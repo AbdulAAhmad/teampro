@@ -1,0 +1,30 @@
+.home-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.home-page .side-bar {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #002e27;
+}
+
+.home-page h1 {
+  font-size: 42px;
+  text-align: center;
+  margin: 0;
+}
+.home-page .custom-button {
+  font-size: 18px;
+}
+
+.home-page .home-page-body {
+  grid-column: 2/-1;
+  background-color: #e8e8e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
