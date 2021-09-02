@@ -17,6 +17,7 @@ export async function authenticate(path, dispatch, authPayload) {
     if (data.success) {
       dispatch({ type: AuthActionTypes.AUTH_SUCCESS, payload: data });
       localStorage.setItem("token", JSON.stringify(data.token));
+      localStorage.setItem("user_id", JSON.stringify(data.id));
       return data;
     }
 
@@ -35,4 +36,5 @@ export async function authenticate(path, dispatch, authPayload) {
 export async function signout(dispatch) {
   dispatch({ type: AuthActionTypes.SIGNOUT });
   localStorage.removeItem("token");
+  localStorage.removeItem("user_id");
 }

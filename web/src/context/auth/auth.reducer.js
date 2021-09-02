@@ -3,10 +3,13 @@ import { AuthActionTypes } from "./auth.types";
 let token = localStorage.getItem("token")
   ? JSON.parse(localStorage.getItem("token"))
   : "";
+let user_id = localStorage.getItem("user_id")
+  ? JSON.parse(localStorage.getItem("user_id"))
+  : "";
 
 export const initialState = {
-  token: "" || token,
-  user_id: "",
+  token: token || "",
+  user_id: user_id || "",
   loading: false,
   errorMessage: null,
 };

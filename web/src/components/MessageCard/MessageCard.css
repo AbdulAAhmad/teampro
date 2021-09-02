@@ -31,14 +31,14 @@
   border: none;
 }
 
-.message-card .message-card-body {
+.message-card .message-card-form {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   padding: 0 10px;
 }
 
-.message-card .message-card-body textarea {
+.message-card .message-card-form textarea {
   resize: none;
   border: none;
   border-radius: 10px;
@@ -47,7 +47,7 @@
   padding: 10px;
 }
 
-.message-card .message-card-body .custom-button {
+.message-card .message-card-form .custom-button {
   margin-top: 1em;
   border: none;
 }
