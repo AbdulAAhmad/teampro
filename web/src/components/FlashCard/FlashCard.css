@@ -1,0 +1,8 @@
+.flash-card {
+  position: absolute;
+  top: 0px;
+  font-size: 24px;
+  padding: 5px 20px;
+  background-color: rgba(255, 253, 224, 0.2);
+  color: #fffde0;
+}
