@@ -1,0 +1,53 @@
+.message-card {
+  background-color: white;
+  color: #002e27;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 15px;
+  border-color: #002e27;
+  width: 35%;
+  height: min-content;
+}
+
+.message-card .message-card-header {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #002e27;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 8px;
+}
+
+.message-card .message-card-header h2 {
+  margin: 0;
+  color: #002e27;
+}
+
+.message-card .message-card-header .custom-button {
+  font-size: 18px;
+  padding: 5px 20px;
+  border: none;
+}
+
+.message-card .message-card-body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 0 10px;
+}
+
+.message-card .message-card-body textarea {
+  resize: none;
+  border: none;
+  border-radius: 10px;
+  background-color: #f3f3f3;
+  height: 8em;
+  padding: 10px;
+}
+
+.message-card .message-card-body .custom-button {
+  margin-top: 1em;
+  border: none;
+}
