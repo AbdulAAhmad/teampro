@@ -1,0 +1,17 @@
+.custom-link {
+  background-color: #002e27;
+  color: #fffde0;
+  text-decoration: none;
+  font-size: 24px;
+  text-align: center;
+  width: 480px;
+  margin: 10px;
+  padding: 8px;
+  border-radius: 10px;
+  border: 2px solid #fffde0;
+}
+
+.custom-link.primary {
+  background-color: #fffde0;
+  color: #002e27;
+}
