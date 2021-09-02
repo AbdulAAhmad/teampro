@@ -1,0 +1,16 @@
+.custom-button {
+  background-color: #002e27;
+  color: #fffde0;
+  text-decoration: none;
+  font-size: 24px;
+  text-align: center;
+  padding: 8px;
+  border-radius: 10px;
+  border: 2px solid #fffde0;
+  cursor: pointer;
+}
+
+.custom-button.primary {
+  background-color: #fffde0;
+  color: #002e27;
+}
