@@ -1,0 +1,16 @@
+.labeled-input {
+  display: flex;
+  flex-direction: column;
+  color: #fffde0;
+  margin-left: 10px;
+}
+
+.labeled-input input {
+  height: 35px;
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+  margin: 5px 0px;
+  margin-bottom: 20px;
+  margin-left: -10px;
+}
