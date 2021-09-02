@@ -10,7 +10,7 @@ const opts = {
 module.exports = (passport) => {
   passport.use(
     new Strategy(opts, async (payload, done) => {
-      await User.findById(payload.user_id)
+      await User.findById(payload.id)
         .then((user) => {
           if (user) {
             return done(null, user);

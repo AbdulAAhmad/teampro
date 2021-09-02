@@ -15,6 +15,7 @@ app.use(passport.initialize());
 require("./middlewares/passport")(passport);
 
 app.use("/api/auth", require("./routes/auth"));
+app.use("/api/users", require("./routes/users"));
 
 const startApp = async () => {
   try {
