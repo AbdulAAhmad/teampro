@@ -1,0 +1,14 @@
+.list-tile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.list-tile .leading {
+  display: flex;
+  align-items: center;
+}
+.list-tile .leading .icon {
+  font-size: 40px;
+  color: #e8e8e8;
+  margin-right: 10px;
+}
