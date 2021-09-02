@@ -1,0 +1,18 @@
+.back-button {
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  padding: 0px;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(255, 253, 224, 0.2);
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.back-button .icon {
+  font-size: 30px;
+  margin-left: -4.5px;
+  color: #fffde0;
+}
