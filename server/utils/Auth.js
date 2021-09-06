@@ -96,6 +96,23 @@ const signinUser = async (userDetails, res) => {
   }
 };
 
+const signoutUser = async (userDetails, res) => {
+  const user = await User.findById(userDetails.id);
+  if (user) {
+    user.pushToken = "";
+    await user.save();
+
+    return res.status(200).json({
+      success: true,
+    });
+  }
+
+  return res.status(404).json({
+    error: "User does not exist",
+    success: false,
+  });
+};
+
 const validateEmail = async (email) => {
   let user = await User.findOne({ email });
   return user ? false : true;
@@ -107,4 +124,5 @@ module.exports = {
   registerUser,
   signinUser,
   userAuth,
+  signoutUser,
 };

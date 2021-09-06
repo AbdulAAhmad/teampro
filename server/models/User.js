@@ -9,6 +9,7 @@ const UserSchema = new Schema(
       required: true,
       select: false,
     },
+    pushToken: { type: String, required: false },
   },
   { timestamps: true }
 );
